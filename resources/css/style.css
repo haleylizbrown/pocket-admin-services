@@ -1,0 +1,123 @@
+/*Site-Wide*/
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Dosis Light'), local('Dosis-Light'), url(https://fonts.gstatic.com/s/dosis/v6/7aJzV14HzAOiwNTiPgucGXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/oaBFj7Fz9Y9_eW3k9Jd9X6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dosis Bold'), local('Dosis-Bold'), url(https://fonts.gstatic.com/s/dosis/v6/22aDRG5X9l7obljtz7tihnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html {
+  font-size: 16px;
+  margin: 0;
+  background-image: url(https://orig00.deviantart.net/dace/f/2011/047/c/3/maze_background_by_caseycole11-d39p98m.png);
+  background-size: cover;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  right: -100px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side*/
+}
+
+#mySidenav a:hover {
+  right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#home {
+  top: 20px;
+  background-color: #4B007F;
+}
+
+#services {
+  top: 80px;
+  background-color: #B64CFF;
+}
+
+#portfolio {
+  top: 140px;
+  background-color: #9600FF;
+}
+
+#contact {
+  top: 200px;
+  background-color: #B00DCC;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: turquoise;
+}
+
+#contact {
+  padding-right: 2rem;
+}
+
+.services {
+  position: relative;
+  top: 6rem;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  top: 12rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+i {
+  padding-right: 1rem;
+}
+
+/*Portfolio*/
+
+.projects {
+  display: flex;
+  position: relative;
+  top: 6rem;
+  text-align: center;
+}
+
+.responsive {
+  padding-left: 4rem;
+}
+
+.multi-page {
+  padding-left: 8rem;
+}
