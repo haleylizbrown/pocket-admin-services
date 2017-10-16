@@ -130,6 +130,10 @@ i {
   padding-left: 8rem;
 }
 
+.multi-page img {
+  height: 67px;
+}
+
 .responsive h2:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
