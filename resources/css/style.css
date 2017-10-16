@@ -121,3 +121,15 @@ i {
 .multi-page {
   padding-left: 8rem;
 }
+
+.responsive h2:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.multi-page h2:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
