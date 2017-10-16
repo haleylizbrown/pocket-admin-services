@@ -38,42 +38,50 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
-#mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  right: -100px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 4rem;
+    font-weight: bold;
 }
 
-#mySidenav a:hover {
-  right: 0; /* On mouse-over, make the elements appear as they should */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
 }
 
 #home {
   top: 20px;
-  background-color: #4B007F;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 #services {
   top: 80px;
-  background-color: #B64CFF;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 #portfolio {
   top: 140px;
-  background-color: #9600FF;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 #contact {
   top: 200px;
-  background-color: #B00DCC;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 a {
