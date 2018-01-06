@@ -51,8 +51,9 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     width: auto;
+    height: auto;
 }
 
 .dropdown:hover .dropdown-content {
@@ -92,10 +93,6 @@ a:hover {
   color: turquoise;
 }
 
-#contact {
-  padding-right: 2rem;
-}
-
 .services {
   position: relative;
   top: 6rem;
@@ -103,14 +100,19 @@ a:hover {
 }
 
 footer {
-  position: relative;
-  top: 12rem;
+  position: absolute;
+  bottom: 3rem;
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 
 i {
   padding-right: 1rem;
+}
+
+#github {
+  padding-right: 4rem;
 }
 
 /*Portfolio*/
@@ -118,20 +120,36 @@ i {
 .projects {
   display: flex;
   position: relative;
-  top: 6rem;
+  top: 12rem;
+  justify-content: center;
+}
+
+.full-site {
   text-align: center;
 }
 
+.full-site img {
+  height: 67px;
+}
+
 .responsive {
-  padding-left: 4rem;
+  text-align: center;
+  padding-left: 8rem;
 }
 
 .multi-page {
+  text-align: center;
   padding-left: 8rem;
 }
 
 .multi-page img {
   height: 67px;
+}
+
+.full-site h2:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .responsive h2:hover {
@@ -144,4 +162,27 @@ i {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .responsive,
+  .multi-page {
+    padding-left: 0;
+  }
+
+  .full-site h2,
+  .responsive h2 {
+    padding-bottom: 3rem;
+  }
+
+  .full-site img,
+  .responsive img,
+  .multi-page img {
+    display: none;
+  }
 }
